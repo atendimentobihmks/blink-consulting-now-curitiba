@@ -1,13 +1,8 @@
-# Segurança, Privacidade e Conformidade LGPD — Blink Consulting Now (Curitiba / PR)
+# Segurança e Conformidade — Consulting Now (Curitiba / PR)
 
-## 1. Visão Geral
-Este documento descreve as diretrizes de segurança, governança e conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) aplicadas ao projeto de Multi-Link da unidade **Curitiba / PR** da **Consulting Now**.
+Este projeto segue rigorosamente os padrões de segurança e conformidade da BMK e da Consulting Now:
 
-## 2. Atendimento Regional Direto
-* Diretor Responsável: **Renato Osvaldo**
-* Contato Oficial: **(41) 98757-8374**
-* E-mail Oficial: **renato.osvaldo@consultingnow.com.br**
-* Unidade Física: **Av. Silva Jardim, 2389, Sala 61, Curitiba - PR**
-
-## 3. Diretrizes de Privacidade
-Nenhum dado pessoal (PII) é armazenado no cliente (navegador). Todos os links direcionam para canais oficiais e criptografados (WhatsApp HTTPS e Landing Page oficial).
+1. **LGPD / Proteção de Dados:** Nenhum dado pessoal sensível é coletado sem consentimento explícito.
+2. **Segurança de Cabeçalhos HTTP:** Configurado via `vercel.json` com proteção contra clickjacking (`X-Frame-Options: DENY`), injeção MIME (`nosniff`) e XSS.
+3. **Links Externos Seguros:** Todas as tags `<a>` externas utilizam `rel="noopener noreferrer"`.
+4. **Armazenamento Seguro:** Não há gravação desnecessária de cookies ou rastreadores invasivos.
